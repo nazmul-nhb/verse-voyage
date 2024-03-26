@@ -1,0 +1,8 @@
+tr td:first-child {
+    color: #131313B3;
+}
+
+tr td:last-child {
+    color: #131313;
+    font-weight: 600;
+}

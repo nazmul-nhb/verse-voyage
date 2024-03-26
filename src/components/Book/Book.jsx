@@ -15,7 +15,7 @@ const Book = ({ book }) => {
                     </div>
                     <div className="flex justify-start">
                         {
-                            tags.map((tag, index) => <p className='ml-6 text-[#23BE0A]' key={index}>{tag}</p>)
+                            tags?.map((tag, index) => <p className='ml-6 text-[#23BE0A] hover:text-[#50B1C9] hover:scale-105 transition duration-500' key={index}>{tag}</p>)
                         }
                     </div>
                 </div>
