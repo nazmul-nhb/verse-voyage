@@ -23,7 +23,7 @@ const Navbar = () => {
                             {navRoutes}
                         </ul>
                     </div>
-                    <Link to={'/'} className="btn btn-ghost text-[#131313] text-lg md:text-3xl font-bold transition-all hover:shadow-sm p-0 md:px-4">Verse Voyage</Link>
+                    <Link to={'/'} className="bg-transparent hover:text-[#59C6D2] hover:scale-110 transition duration-500 text-[#131313] text-lg md:text-3xl font-bold p-0 md:px-4">Verse Voyage</Link>
                 </div>
                 <div className="navbar-center hidden xl:flex text-[#150B2BB3]">
                     <ul className="text-[#131313CC] text-lg font-semibold menu menu-horizontal gap-4 px-1">
@@ -31,8 +31,8 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end flex justify-end items-center gap-2 md:gap-4 text-sm md:text-lg text-white font-semibold">
-                    <button className="bg-[#23BE0A] border border-[#23BE0A] rounded-xl w-16 md:w-28 h-7 md:h-12 hover:bg-white hover:text-[#23BE0A] transition-all">Sign In</button>
-                    <button className="bg-[#59C6D2] border border-[#59C6D2] rounded-xl w-[70px] md:w-28 h-7 md:h-12 hover:bg-white hover:text-[#59C6D2] transition-all">Sign Up</button>
+                    <button className="bg-[#23BE0A] border border-[#23BE0A] rounded-xl w-16 md:w-28 h-7 md:h-12 hover:bg-white hover:text-[#23BE0A] transition duration-500">Sign In</button>
+                    <button className="bg-[#59C6D2] border border-[#59C6D2] rounded-xl w-[70px] md:w-28 h-7 md:h-12 hover:bg-white hover:text-[#59C6D2] transition duration-500">Sign Up</button>
                 </div>
             </div>
         </header>
