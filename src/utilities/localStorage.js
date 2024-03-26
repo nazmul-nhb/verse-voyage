@@ -9,17 +9,25 @@ const getStoredItems = (itemKey) => {
 }
 
 const saveToLocal = (item, itemKey, toastKey) => {
-    console.log(item.bookID);
     const storedBooks = getStoredItems(itemKey);
     // prevent duplicate items from being added to local storage
-    const filteredBooks = storedBooks.find(book => book.bookID == item.bookID);
+    const filteredBooks = storedBooks.find(book => book.bookID === item.bookID);
     if (!filteredBooks) {
         storedBooks.push(item);
         localStorage.setItem(itemKey, JSON.stringify(storedBooks));
-        toast.success(`Successfully Added to ${toastKey}`)
+        toast.success(`Successfully Added to ${toastKey}`);
     } else {
-        toast.warn(`Already Exists in ${toastKey}`)
+        toast.warn(`Book Already Exists in ${toastKey}`)
     }
 }
+/* 
+const removeFromLocal = (removableItem, itemKey) => {
+    const storedBooks = getStoredItems(itemKey);
+    const filteredBooks = storedBooks.find(book => book.bookID !== removableItem.bookID);
+    // if(filteredBooks) {
+    //     localStorage.setItem(itemKey, JSON.stringify(filteredBooks));
+    // }
+    saveToLocal(filteredBooks, itemKey );
+} */
 
 export { getStoredItems, saveToLocal }
