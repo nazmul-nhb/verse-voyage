@@ -6,6 +6,7 @@ import ListedBooks from "../pages/ListedBooks/ListedBooks";
 import PagesToRead from "../pages/PagesToRead/PagesToRead";
 import About from "../pages/About/About";
 import Contact from "../pages/Contact/Contact";
+import BookDetails from "../pages/BookDetails/BookDetails";
 
 export const router = createBrowserRouter([
     {
@@ -32,6 +33,11 @@ export const router = createBrowserRouter([
             {
                 path: '/contact',
                 element: <Contact></Contact>
+            },
+            {
+                path:'/book-details/:bookID',
+                element: <BookDetails></BookDetails>,
+                loader: () => fetch(`https://raw.githubusercontent.com/nazmul-nhb/Fake-API/main/book-review/books.json`)
             }
         ],
     },

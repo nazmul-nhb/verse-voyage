@@ -12,18 +12,18 @@ const Navbar = () => {
     </>
 
     return (
-        <header className="work-sans mt-3 md:mt-12 mx-4 md:mx-6 xl:mx-0">
+        <header className="work-sans mt-3 md:mt-10 mx-4 md:mx-6 xl:mx-0">
             <div className="max-w-7xl font-lexend items-center navbar mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
-                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+                        <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden p-0">
                             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                         </div>
                         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             {navRoutes}
                         </ul>
                     </div>
-                    <Link to={'/'} className="btn btn-ghost text-[#131313] text-lg md:text-3xl font-bold transition-all hover:shadow-sm px-0">Verse Voyage</Link>
+                    <Link to={'/'} className="btn btn-ghost text-[#131313] text-lg md:text-3xl font-bold transition-all hover:shadow-sm p-0 md:px-4">Verse Voyage</Link>
                 </div>
                 <div className="navbar-center hidden xl:flex text-[#150B2BB3]">
                     <ul className="text-[#131313CC] text-lg font-semibold menu menu-horizontal gap-4 px-1">
