@@ -13,6 +13,11 @@ a.pending {
 }
 
 li a:hover {
+    border: 1px solid #23BE0A !important;
     background-color: #23BE0A !important;
     color: white !important;
+}
+
+li a {
+    border: 1px solid transparent;
 }

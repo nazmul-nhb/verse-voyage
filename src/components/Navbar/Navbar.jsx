@@ -12,7 +12,7 @@ const Navbar = () => {
     </>
 
     return (
-        <header className="work-sans mt-3 md:mt-10 mx-4 md:mx-6 xl:mx-0">
+        <header className="work-sans mt-3 md:mt-10 mx-4 xl:mx-28">
             <div className="max-w-7xl font-lexend items-center navbar mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -32,7 +32,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-end flex justify-end items-center gap-2 md:gap-4 text-sm md:text-lg text-white font-semibold">
                     <button className="bg-[#23BE0A] border border-[#23BE0A] rounded-xl w-16 md:w-28 h-7 md:h-12 hover:bg-white hover:text-[#23BE0A] transition-all">Sign In</button>
-                    <button className="bg-[#59C6D2] border border-[#59C6D2] rounded-xl w-16 md:w-28 h-7 md:h-12 hover:bg-white hover:text-[#59C6D2] transition-all">Sign Up</button>
+                    <button className="bg-[#59C6D2] border border-[#59C6D2] rounded-xl w-[70px] md:w-28 h-7 md:h-12 hover:bg-white hover:text-[#59C6D2] transition-all">Sign Up</button>
                 </div>
             </div>
         </header>

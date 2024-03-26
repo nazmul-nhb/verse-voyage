@@ -3,7 +3,7 @@ import Books from "../Books/Books";
 
 const Home = () => {
     return (
-        <div className="max-w-7xl mx-auto text-[#131313]">
+        <div className="mx-4 text-[#131313]">
             <Banner></Banner>
             <Books></Books>
         </div>
