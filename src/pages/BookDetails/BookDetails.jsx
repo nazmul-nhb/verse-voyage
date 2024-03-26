@@ -46,7 +46,7 @@ const BookDetails = () => {
     return (
         <div className="mx-4 my-4 md:my-12 flex flex-col md:flex-row justify-between gap-4 md:gap-6 lg:gap-12 flex-1 text-[#131313]">
             <div className="w-full md:w-[45%] bg-[#1313130D] rounded-2xl">
-                <img src={coverImage} alt={bookTitle} />
+                <img className="hover:scale-105 transition duration-1000" src={coverImage} alt={bookTitle} title={bookTitle} />
             </div>
             <div className="w-full md:w-[55%] flex flex-col gap-5">
                 <h2 className="playfair-display text-4xl font-bold">{bookTitle}</h2>
