@@ -12,7 +12,7 @@ const About = () => {
             <fieldset className="border border-solid border-gray-300 p-3">
                 <legend className="text-sm">Our Mission</legend>
                 <p className="">
-                    At Verse Voyage, our mission is simple: to celebrate the power of storytelling and foster a love for reading. We believe that books have the remarkable ability to inspire, educate, and entertain, and we're dedicated to helping readers find the perfect book for every occasion.
+                    At Verse Voyage, our mission is simple: to celebrate the power of storytelling and foster a love for reading. We believe that books have the remarkable ability to inspire, educate, and entertain, and we&rsquo;re dedicated to helping readers find the perfect book for every occasion.
                 </p>
             </fieldset>
 
