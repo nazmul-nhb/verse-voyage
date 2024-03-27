@@ -19,7 +19,8 @@ export const router = createBrowserRouter([
                 element: <Home></Home>,
             },
             {
-                path:'/listed-books',
+                path: '/listed-books',
+                title: 'Listed Books',
                 element: <ListedBooks></ListedBooks>,
             },
             {
@@ -35,7 +36,7 @@ export const router = createBrowserRouter([
                 element: <Contact></Contact>
             },
             {
-                path:'/book-details/:bookID',
+                path: '/book-details/:bookID',
                 element: <BookDetails></BookDetails>,
                 loader: () => fetch(`https://raw.githubusercontent.com/nazmul-nhb/Fake-API/main/book-review/books.json`)
             }
