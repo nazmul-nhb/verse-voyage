@@ -46,15 +46,15 @@ const handleReadList = () => {
 
     return (
         <div className="mx-4 my-4 md:my-12 flex flex-col md:flex-row justify-between gap-4 md:gap-6 lg:gap-12 flex-1 text-[#131313]">
-            <div className="w-full md:w-[45%] bg-[#1313130D] rounded-2xl">
-                <img className="hover:scale-105 transition duration-1000" src={coverImage} alt={bookTitle} title={bookTitle} />
+            <div className="w-full md:w-[45%] bg-[#1313130D] rounded-2xl flex flex-col items-center justify-center">
+                <img className="w-3/5 md:w-full hover:scale-105 transition duration-1000" src={coverImage} alt={bookTitle} title={bookTitle} />
             </div>
             <div className="w-full md:w-[55%] flex flex-col gap-5">
-                <h2 className="playfair-display text-4xl font-bold">{bookTitle}</h2>
-                <h4 className="text-[#131313CC] text-xl font-medium">By : {authorName}</h4>
+                <h2 className="playfair-display text-2xl md:text-4xl font-bold">{bookTitle}</h2>
+                <h4 className="text-[#131313CC] text-lg md:text-xl font-medium">By : {authorName}</h4>
                 <div>
                     <hr className="border border-[#13131326]" />
-                    <h4 className="text-[#131313CC] text-xl font-medium my-2">{category}</h4>
+                    <h4 className="text-[#131313CC] text-lg md:text-xl font-medium my-2">{category}</h4>
                     <hr className="border border-[#13131326]" />
                 </div>
                 <p className="text-[#131313B3]"><span className="font-bold">Review : </span>{reviewText}</p>
