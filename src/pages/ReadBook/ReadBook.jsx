@@ -32,8 +32,8 @@ const ReadBook = ({ readBook }) => {
                     </div>
                     <hr className='w-full flex-grow' />
                     <div className='flex gap-3 text-center'>
-                        <div className="text-xs md:text-base bg-[#328EFF26] border border-[#328EFF26] text-[#328EFF] rounded-[30px] px-4 py-2">Category: {category}</div>
-                        <div className="text-xs md:text-base bg-[#FFAC3326] border border-[#FFAC3326] text-[#FFAC33] rounded-[30px] px-4 py-2">Rating: {rating}</div>
+                        <div className="text-xs md:text-base bg-[#328EFF26] border border-[#328EFF26] text-[#328EFF] rounded-[30px] px-4 py-2 hover:bg-[#328effdf] transition duration-500 hover:border-[#328effdf] hover:text-white hover:font-medium">Category: {category}</div>
+                        <div className="text-xs md:text-base bg-[#FFAC3326] border border-[#FFAC3326] text-[#FFAC33] rounded-[30px] px-4 py-2 hover:bg-[#ffad33d7] transition duration-500 hover:border-[#ffad33d7] hover:text-white hover:font-medium">Rating: {rating}</div>
                         <Link className='text-xs md:text-lg font-medium bg-[#23BE0A] border border-[#23BE0A] text-white rounded-[30px] px-4 py-2 hover:text-[#23BE0A] hover:bg-transparent transition duration-500' to={`/book-details/${bookID}`}>View Details</Link>
                     </div>
                 </div>
