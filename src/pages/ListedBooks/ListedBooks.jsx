@@ -10,17 +10,26 @@ import WishedBook from "../WishedBook/WishedBook";
 const ListedBooks = () => {
     const [readBooks, setReadBooks] = useState([]);
     const [wishedBooks, setWishedBooks] = useState([]);
-    const [down, setDown] = useState(true)
+    const [arrowDown, setArrowDown] = useState(true);
+
+    const [sortedBooks, setSortedBooks] = useState([])
 
     useEffect(() => {
         const storedReadBooks = getStoredItems('read-list');
         setReadBooks(storedReadBooks);
+        setSortedBooks(storedReadBooks)
     }, [])
 
     useEffect(() => {
         const storedWishedBooks = getStoredItems('wish-list');
         setWishedBooks(storedWishedBooks);
     }, [])
+
+/*     const handleSortBooks = (sorted) => {
+        setSortedBooks(sorted)
+    } */
+console.log(readBooks.map(book => book.rating));
+console.log(sortedBooks.map(book =>typeof book.rating && book.totalPages && book.publishingYear));
 
     return (
         <div className="mx-4 my-4 md:my-12 text-[#131313]">
@@ -29,11 +38,11 @@ const ListedBooks = () => {
             </div>
             <div className="flex justify-center items-center">
                 <details className="dropdown">
-                    <summary onClick={() => setDown(!down)} className="m-1 bg-[#23BE0A] text-base md:text-xl font-semibold text-white border border-[#23BE0A] rounded-xl w-36 h-14 hover:bg-transparent hover:text-[#23BE0A] transition duration-500 flex justify-center items-center gap-3 cursor-pointer">Sort By {down ? < FaChevronDown /> : <FaChevronUp />}</summary>
+                    <summary onClick={() => setArrowDown(!arrowDown)} className="m-1 bg-[#23BE0A] text-base md:text-xl font-semibold text-white border border-[#23BE0A] rounded-xl w-36 h-14 hover:bg-transparent hover:text-[#23BE0A] transition duration-500 flex justify-center items-center gap-3 cursor-pointer">Sort By {arrowDown ? < FaChevronDown /> : <FaChevronUp />}</summary>
                     <ul className="p-2 shadow menu dropdown-content z-[1] bg-base-100 rounded-box w-44">
-                        <li><a>Rating</a></li>
-                        <li><a>Number of Pages</a></li>
-                        <li><a>Published Year</a></li>
+                        <li><button onClick={() => setSortedBooks(readBooks.sort((a, b) => b?.rating - a?.rating))}>Rating</button></li>
+                        <li><button onClick={() => setSortedBooks(readBooks.sort((a, b) => b?.totalPages - a?.totalPages))}>Number of Pages</button></li>
+                        <li><button onClick={() => setSortedBooks(readBooks.sort((a, b) => b?.publishingYear - a?.publishingYear))}>Published Year</button></li>
                     </ul>
                 </details>
             </div>
@@ -46,7 +55,7 @@ const ListedBooks = () => {
                 <TabPanel>
                     <div className="flex flex-col gap-6">
                         {
-                            readBooks.map(readBook => <ReadBook key={readBook.bookID} readBook={readBook}></ReadBook>)
+                            sortedBooks.map(readBook => <ReadBook key={readBook.bookID} readBook={readBook}></ReadBook>)
                         }
                     </div>
                 </TabPanel>

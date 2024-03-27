@@ -12,7 +12,7 @@ const WishedBook = ({ wishedBook }) => {
         <div className='border border-[#13131326] rounded-2xl p-6'>
             <div className="flex flex-col md:flex-row gap-6">
                 <div className="w-full md:w-1/4 bg-[#1313130D] rounded-2xl flex justify-center items-center">
-                    <img src={coverImage} alt={bookTitle} title={bookTitle} className="w-2/3" />
+                    <img src={coverImage} alt={bookTitle} title={bookTitle} className="w-2/3 hover:scale-105 transition duration-1000" />
                 </div>
                 <div className="w-full md:w-3/4 flex flex-col gap-4">
                     <h3 className="playfair-display text-2xl font-bold">{bookTitle}</h3>

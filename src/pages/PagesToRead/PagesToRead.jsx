@@ -49,7 +49,7 @@ const PagesToRead = () => {
                 <YAxis />
                 <Bar dataKey="Pages" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
                     {chartedBooks.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={colors[index % 20]} />
+                        <Cell key={`cell-${index}`} fill={colors[index % 30]} />
                     ))}
                 </Bar>
                 <Tooltip cursor={false}></Tooltip>
