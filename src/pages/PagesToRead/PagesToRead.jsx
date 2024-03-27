@@ -3,7 +3,7 @@ import { getStoredItems } from "../../utilities/localStorage";
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip } from 'recharts';
 import PropTypes from 'prop-types';
 
-const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
+const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#FB0100', '#AA3BBC', '#23BE0A', '#59C6D2', '#005467'];
 
 const getPath = (x, y, width, height) => {
     return `M${x}, ${y + height} C${x + width / 3}, ${y + height} ${x + width / 2}, ${y + height / 3} ${x + width / 2}, ${y} C${x + width / 2}, ${y + height / 3} ${x + (2 * width) / 3}, ${y + height} ${x + width}, ${y + height} Z`;
@@ -34,17 +34,11 @@ const PagesToRead = () => {
     return (
         <div className="flex justify-center items-center">
             <BarChart
-                width={1200}
-                height={500}
+                width={1170}
+                height={600}
                 data={chartedBooks}
                 margin={{
                     top: 40,
-                    right: 30,
-                    left: 20,
-                    bottom: 5,
-                }}
-                padding={{
-                    top: 80,
                     right: 30,
                     left: 20,
                     bottom: 5,

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import './BookDetails.css';
-import { getStoredItems, saveToLocal } from "../../utilities/localStorage";
+import { getStoredItems, moveFromWishToReadList, saveToLocal } from "../../utilities/localStorage";
 import { toast } from "react-toastify";
 
 const BookDetails = () => {
@@ -23,14 +23,15 @@ const BookDetails = () => {
 
     const { coverImage, bookTitle, authorName, category, reviewText, tags, totalPages, publisher, publishingYear, rating } = singleBook;
 
-/*     const handleReadList = () => {
-        const wishedBooks = getStoredItems('wish-list');
-        const existsInWishlist = wishedBooks.find(book => book.bookID === singleBook.bookID);
-        if (existsInWishlist) {
-            removeFromLocal(existsInWishlist, 'wish-list');
-            saveToLocal(singleBook, 'read-list', 'Read List');
-        }
-    } */
+const handleReadList = () => {
+    const wishedBooks = getStoredItems('wish-list');
+    const existsInWishlist = wishedBooks.find(book => book.bookID === singleBook.bookID);
+    if (existsInWishlist) {
+        moveFromWishToReadList(singleBook, 'wish-list', 'read-list')
+    } else{
+        saveToLocal(singleBook, 'read-list', 'Read List')
+    }
+}
 
     // Check in the Read List Before Adding in the Wishlist
     const handleWishlist = () => {
@@ -39,7 +40,7 @@ const BookDetails = () => {
         if (!existsInReadList) {
             saveToLocal(singleBook, 'wish-list', 'Wishlist')
         } else {
-            toast.error("You have already read the book!")
+            toast.error("You have already read the book!", { theme: "colored", autoClose: 3000 })
         }
     }
 
@@ -90,7 +91,7 @@ const BookDetails = () => {
                     </tbody>
                 </table>
                 <div className="flex gap-4">
-                    <button onClick={() => saveToLocal(singleBook, 'read-list', 'Read List')} className="bg-transparent text-base md:text-lg font-semibold text-[#131313] border border-[#1313134D] rounded-xl w-[100px] h-14  hover:text-white hover:bg-[#1313134D] transition duration-500 flex justify-center items-center">Read</button>
+                    <button onClick={handleReadList} className="bg-transparent text-base md:text-lg font-semibold text-[#131313] border border-[#1313134D] rounded-xl w-[100px] h-14  hover:text-white hover:bg-[#1313134D] transition duration-500 flex justify-center items-center">Read</button>
                     <button onClick={handleWishlist} className="bg-[#50B1C9] text-base md:text-xl font-semibold text-white border border-[#50B1C9] rounded-xl w-32 h-14 hover:bg-transparent hover:text-[#50B1C9] transition duration-500 flex justify-center items-center">Wishlist</button>
                 </div>
             </div>
