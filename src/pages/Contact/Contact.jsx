@@ -61,7 +61,7 @@ const Contact = () => {
                             <h3 className="font-bold text-lg">Success!</h3>
                             <p className="py-4">Message Sent</p>
                             <div className="modal-action">
-                                <button className="p-3 font-bold rounded-lg bg-teal-600 text-white border border-teal-600 hover:text-teal-600 hover:bg-transparent transition duration-500 text-[#2b7178]" onClick={closeModal}>Close</button>
+                                <button className="p-3 font-bold rounded-lg bg-teal-600 text-white border border-teal-600 hover:text-teal-600 hover:bg-transparent transition duration-500" onClick={closeModal}>Close</button>
                             </div>
                         </div>
                     </dialog>

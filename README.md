@@ -17,4 +17,6 @@
 - **About** page will show you about the website.
 - In the **Footer** section you will see social links for the website.
 
-- This Project is for [Assignment #8 for Programming Hero Web Dev Course of Batch #9](https://github.com/ProgrammingHero1/B9A8-Book-Review)
+
+
+*This Project is for [**Assignment #8 for Programming Hero Web Dev Course of Batch #9**]*(https://github.com/ProgrammingHero1/B9A8-Book-Review)
