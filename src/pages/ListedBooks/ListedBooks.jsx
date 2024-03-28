@@ -6,6 +6,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import ReadBook from "../ReadBook/ReadBook";
 import WishedBook from "../WishedBook/WishedBook";
+import { Helmet } from "react-helmet-async";
 
 const ListedBooks = () => {
     const [readBooks, setReadBooks] = useState([]);
@@ -44,6 +45,9 @@ const ListedBooks = () => {
 
     return (
         <div className="mx-4 my-4 md:my-12 text-[#131313]">
+            <Helmet>
+                <title>Your Listed Books : : Verse Voyage</title>
+            </Helmet>
             <div className="bg-[#1313130D] py-9 rounded-2xl flex justify-center items-center mb-8">
                 <h3 className="text-3xl font-bold">Books</h3>
             </div>

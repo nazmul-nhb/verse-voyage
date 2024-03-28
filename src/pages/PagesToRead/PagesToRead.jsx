@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { getStoredItems } from "../../utilities/localStorage";
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import PropTypes from 'prop-types';
+import { Helmet } from "react-helmet-async";
 
 const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', '#FB0100', '#AA3BBC', '#23BE0A', '#59C6D2', '#005467', '#FFBB28', '#FF8042', '#FB0100', '#AA3BBC', '#23BE0A', '#59C6D2'];
 
@@ -33,6 +34,9 @@ const PagesToRead = () => {
 
     return (
         <div className="w-full h-screen flex flex-col items-center justify-center mb-16">
+            <Helmet>
+                <title>Pages to Read : : Verse Voyage</title>
+            </Helmet>
             <div className="mb-2 md:mb-12"></div>
             <ResponsiveContainer width="80%" height="80%">
                 <BarChart data={chartedBooks} >

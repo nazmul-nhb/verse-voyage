@@ -3,6 +3,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import './BookDetails.css';
 import { getStoredItems, moveFromWishToReadList, saveToLocal } from "../../utilities/localStorage";
 import { toast } from "react-toastify";
+import { Helmet } from "react-helmet-async";
 
 const BookDetails = () => {
 
@@ -46,6 +47,9 @@ const handleReadList = () => {
 
     return (
         <div className="mx-4 my-4 md:my-12 flex flex-col md:flex-row justify-between gap-4 md:gap-6 lg:gap-12 flex-1 text-[#131313]">
+            <Helmet>
+                <title>Review for {`${bookTitle}`} : : Verse Voyage</title>
+            </Helmet>
             <div className="w-full md:w-[45%] bg-[#1313130D] rounded-2xl flex flex-col items-center justify-center">
                 <img className="w-3/5 md:w-full hover:scale-105 transition duration-1000" src={coverImage} alt={bookTitle} title={bookTitle} />
             </div>

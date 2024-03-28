@@ -1,7 +1,11 @@
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
     return (
         <div className="mx-6 my-4 md:my-12 text-justify">
+            <Helmet>
+                <title>About Verse Voyage</title>
+            </Helmet>
             <div className="">
                 <h3 className="text-center">About Us</h3>
                 <p className="indent-6">

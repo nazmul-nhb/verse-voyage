@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import contactDoodle from '../../assets/doodle.svg'
+import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
 
@@ -26,6 +27,9 @@ const Contact = () => {
 
     return (
         <div className="mx-4 my-4 md:my-12 grid grid-cols-1 gap-8 px-8 py-16 rounded-2xl md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-gray-100 dark:text-gray-800">
+            <Helmet>
+                <title>Contact Verse Voyage</title>
+            </Helmet>
             <div className="flex flex-col justify-between">
                 <div className="space-y-2">
                     <h2 className="text-4xl font-bold leading-tight lg:text-5xl">Let&rsquo;s talk!</h2>

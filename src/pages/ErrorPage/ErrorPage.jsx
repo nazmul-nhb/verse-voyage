@@ -1,9 +1,13 @@
+import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 
 const ErrorPage = () => {
 
     return (
         <section className="flex items-center h-full sm:p-16 dark:bg-gray-50 dark:text-gray-800">
+            <Helmet>
+                <title>Error : : 404</title>
+            </Helmet>
             <div className="container flex flex-col items-center justify-center px-5 mx-auto my-6 space-y-4 text-center">
                 <div className="w-full text-center">
                     <h2 className="mb-8 font-extrabold text-9xl text-red-600">404</h2>
