@@ -8,7 +8,7 @@ const Footer = () => {
     return (
         <footer className="work-sans w-full mx-auto flex flex-col gap-6 p-8 lg:p-24 bg-[#12132d0d] lg:mt-24 mt-8">
             <div className="text-center flex flex-col items-center gap-6 mb-4">
-                <h3 className="text-[#12132D] font-extrabold text-[28px] hover:text-[#59C6D2] lg:text-4xl transition duration-500"><Link to={'/about#about-header'}>Verse Voyager</Link></h3>
+                <h3 className="text-[#12132D] font-extrabold text-[28px] hover:text-[#59C6D2] lg:text-4xl transition duration-500"><Link to={'/about#about-header'}>Verse Voyage</Link></h3>
                 <p className="w-full lg:w-2/5 mx-auto text-[#12132DB3]">Embark on a literary journey through the pages of diverse book reviews and recommendations. Follow us on social media for exclusive updates!</p>
             </div>
             {/* Social Media */}
@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
             <hr className="border border-dashed border-[#12132D40]" />
             <p className="text-center">
-                <span className="font-semibold">Verse Voyager</span>
+                <span className="font-semibold">Verse Voyage</span>
                 <br />
                 <span className="text-[#12132D80]">2024 &copy; All Rights Reserved.</span>
             </p>
