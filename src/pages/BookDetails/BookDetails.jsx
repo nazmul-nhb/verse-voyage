@@ -75,8 +75,8 @@ const BookDetails = () => {
                     <h4 className="text-[#131313CC] text-lg md:text-xl font-medium my-2">{category}</h4>
                     <hr className="border border-[#13131326]" />
                 </div>
-                <p className="text-[#131313B3]"><span className="font-bold">Review : </span>{reviewText}</p>
-                <div className="flex justify-start">
+                <p className="text-[#131313B3] text-justify indent-6"><span className="font-bold">Review : </span>{reviewText}</p>
+                <div className="flex justify-start items-center">
                     <span className="font-bold">Tag</span>
                     {
                         tags?.map((tag, index) => <p className='font-medium text-[#23BE0A] hover:text-[#50B1C9] hover:scale-105 transition duration-500 cursor-pointer ml-6' key={index}>#{tag}</p>)
@@ -109,7 +109,7 @@ const BookDetails = () => {
                     </tbody>
                 </table>
                 <div className="flex gap-4">
-                    <button onClick={handleReadList} className="bg-transparent text-base md:text-lg font-semibold text-[#131313] border border-[#1313134D] rounded-xl w-[100px] h-14  hover:text-white hover:bg-[#1313134D] transition duration-500 flex justify-center items-center">Read</button>
+                    <button onClick={handleReadList} className="bg-transparent text-base md:text-lg font-semibold text-teal-600 border border-teal-600 rounded-xl w-[100px] h-14  hover:text-white hover:bg-teal-600 transition duration-500 flex justify-center items-center">Read</button>
                     <button onClick={handleWishlist} className="bg-[#50B1C9] text-base md:text-xl font-semibold text-white border border-[#50B1C9] rounded-xl w-32 h-14 hover:bg-transparent hover:text-[#50B1C9] transition duration-500 flex justify-center items-center">Wishlist</button>
                 </div>
             </div>

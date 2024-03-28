@@ -33,7 +33,7 @@ const moveFromWishToReadList = (removableBook, removeFromKey = 'wish-list', addT
         storedBooksToAdd.push(removableBook);
         localStorage.setItem(addToKey, JSON.stringify(storedBooksToAdd));
 
-        toast.info(`Added to Read List from Wishlist`, { theme: "colored", autoClose: 3000 });
+        toast.info(`Book Moved to Read List`, { theme: "colored", autoClose: 3000 });
     }
 }
 
