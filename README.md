@@ -7,7 +7,7 @@
 - [**Surge Live Page Link** ](https://nhb-verse-voyage.surge.sh/)
 
 # Features & Functionalities of the Website:
-- You can add books to your wishlist and/or read list.
+- You can add books to your **Wishlist** and/or **Read List**.
 - If you click on **Read** button on **Book Details** page while the book is already in the wishlist, it will remove the book from **Wishlist** and add it to **Read List**.
 - You can sort books by *rating*, *number of pages* or *publishing year*.
 - In **Pages to Read** page you can see the number of pages you read from your read book list in a charming triangular shaped chart.
@@ -17,6 +17,7 @@
 - **About** page will show you about the website.
 - In **About** page you can move to sections by clicking on the legends.
 - In the **Footer** section you will see social links for the website.
+- If you enter an invalid URL suffix, it will take you to a **404 Error Page**!
 
 
 

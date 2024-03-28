@@ -48,8 +48,8 @@ const ListedBooks = () => {
             <Helmet>
                 <title>Your Listed Books : : Verse Voyage</title>
             </Helmet>
-            <div className="bg-[#1313130D] py-9 rounded-2xl flex justify-center items-center mb-8">
-                <h3 className="text-3xl font-bold">Books</h3>
+            <div className="bg-[#1313130D] p-4 md:py-9 rounded-2xl flex justify-center items-center mb-8">
+                <h3 className="text-2xl md:text-3xl font-bold">Your Listed Books</h3>
             </div>
             {/* Dropdown Menu (For Sort By Buttons) */}
             <div className="flex justify-center items-center">
