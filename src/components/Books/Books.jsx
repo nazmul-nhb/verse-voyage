@@ -20,9 +20,9 @@ const Books = () => {
     if (loading) {
         return (
             <div className="flex items-center justify-center space-x-2">
-                <div className="w-4 h-4 rounded-full animate-pulse dark:bg-violet-600"></div>
-                <div className="w-4 h-4 rounded-full animate-pulse dark:bg-violet-600"></div>
-                <div className="w-4 h-4 rounded-full animate-pulse dark:bg-violet-600"></div>
+                <div className="w-4 h-4 rounded-full animate-pulse dark:bg-teal-600"></div>
+                <div className="w-4 h-4 rounded-full animate-pulse dark:bg-teal-600"></div>
+                <div className="w-4 h-4 rounded-full animate-pulse dark:bg-teal-600"></div>
             </div>
         )
     }
@@ -38,7 +38,7 @@ const Books = () => {
             <div className={bookLength === books.length ? 'hidden' : 'flex justify-center items-center mt-8 md:mt-20'}>
                 <button
                     onClick={() => setBookLength(books.length)}
-                    className="btn btn-primary">Show All Books</button>
+                    className="flex items-center justify-center tracking-wide p-3 font-bold rounded-lg bg-teal-600 text-white border border-teal-600 hover:text-teal-600 hover:bg-transparent transition duration-500">Show All Books</button>
             </div>
         </div>
     );
