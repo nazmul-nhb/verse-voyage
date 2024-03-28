@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import contactDoodle from '../../assets/doodle.svg';
-import success from '../../assets/success.png'
+import success from '../../assets/success.png';
 import { Helmet } from 'react-helmet-async';
 
 const Contact = () => {
@@ -10,7 +10,7 @@ const Contact = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const form = event.target;
+        const form = e.target;
 
         if (form.checkValidity()) {
             setShowModal(true);
@@ -49,7 +49,7 @@ const Contact = () => {
                 </div>
                 <div>
                     <label className="text-sm">Message</label>
-                    <textarea name='message' required id="message" rows="3" placeholder="Your Message to us." className="border border-[#59C6D2] rounded-lg focus:outline-0 w-full p-3 bg-[#328eff0c] focus:bg-[#328EFF26] transition duration-500"></textarea>
+                    <textarea name='message' required id="message" rows="3" placeholder="Write Your Message to us" className="border border-[#59C6D2] rounded-lg focus:outline-0 w-full p-3 bg-[#328eff0c] focus:bg-[#328EFF26] transition duration-500"></textarea>
                 </div>
                 <button type="submit" className="w-full flex items-center justify-center tracking-wide uppercase p-3 font-bold rounded-lg bg-teal-600 text-white border border-teal-600 hover:text-teal-600 hover:bg-transparent transition duration-500">Send Message</button>
             </form>
