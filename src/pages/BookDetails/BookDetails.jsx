@@ -9,10 +9,13 @@ const BookDetails = () => {
 
     const [singleBook, setSingleBook] = useState({});
 
+    const [loading, setLoading] = useState(true);
+
     const { bookID } = useParams();
     const books = useLoaderData();
 
     useEffect(() => {
+        setLoading(true);
         const arrayBooks = JSON.parse(books);
 
         const filteredBook = arrayBooks.find(book => book.bookID === bookID);
@@ -20,19 +23,20 @@ const BookDetails = () => {
         if (filteredBook) {
             setSingleBook(filteredBook);
         }
+        setLoading(false);
     }, [books, bookID])
 
     const { coverImage, bookTitle, authorName, category, reviewText, tags, totalPages, publisher, publishingYear, rating } = singleBook;
 
-const handleReadList = () => {
-    const wishedBooks = getStoredItems('wish-list');
-    const existsInWishlist = wishedBooks.find(book => book.bookID === singleBook.bookID);
-    if (existsInWishlist) {
-        moveFromWishToReadList(singleBook, 'wish-list', 'read-list')
-    } else{
-        saveToLocal(singleBook, 'read-list', 'Read List')
+    const handleReadList = () => {
+        const wishedBooks = getStoredItems('wish-list');
+        const existsInWishlist = wishedBooks.find(book => book.bookID === singleBook.bookID);
+        if (existsInWishlist) {
+            moveFromWishToReadList(singleBook, 'wish-list', 'read-list')
+        } else {
+            saveToLocal(singleBook, 'read-list', 'Read List')
+        }
     }
-}
 
     // Check in the Read List Before Adding in the Wishlist
     const handleWishlist = () => {
@@ -43,6 +47,16 @@ const handleReadList = () => {
         } else {
             toast.error("You have already read the book!", { theme: "colored", autoClose: 3000 })
         }
+    }
+
+    if (loading) {
+        return (
+            <div className="flex items-center justify-center space-x-2">
+                <div className="w-4 h-4 rounded-full animate-pulse dark:bg-violet-600"></div>
+                <div className="w-4 h-4 rounded-full animate-pulse dark:bg-violet-600"></div>
+                <div className="w-4 h-4 rounded-full animate-pulse dark:bg-violet-600"></div>
+            </div>
+        )
     }
 
     return (
