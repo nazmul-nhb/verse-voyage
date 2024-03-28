@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import contactDoodle from '../../assets/doodle.svg';
+import contactDoodle from '../../assets/contact.png';
 import success from '../../assets/success.png';
 import { Helmet } from 'react-helmet-async';
 
@@ -33,22 +33,22 @@ const Contact = () => {
             </Helmet>
             <div className="flex flex-col justify-between">
                 <div className="space-y-8">
-                    <h2 className="text-4xl font-bold leading-tight lg:text-5xl">Let&rsquo;s talk!</h2>
-                    <div className="dark:text-gray-600">Thank you for your interest in reaching out to us! Whether you have a question, suggestion, or just want to say hello, we&rsquo;re here to listen. Please, feel free to use the form to get in touch with our team. We&rsquo;ll do our best to respond to you as soon as possible.</div>
+                    <h2 className="text-2xl md:text-4xl font-bold leading-tight lg:text-5xl">Let&rsquo;s talk!</h2>
+                    <div className="dark:text-gray-600 text-justify md:pr-12">Thank you for your interest in reaching out to us! Whether you have a question, suggestion, or just want to say &ldquo;hello&rdquo;, we&rsquo;re here to listen. Please, feel free to use the form to get in touch with our team. We&rsquo;ll do our best to respond to you as soon as possible.</div>
                 </div>
-                <img src={contactDoodle} alt="Contact Us" className="p-6 h-52 md:h-64" />
+                <img src={contactDoodle} alt="Contact Us" className="w-full md:w-4/5 px-6" />
             </div>
-            <form onSubmit={handleSubmit} className="text-[#2b7178] space-y-6">
+            <form onSubmit={handleSubmit} className="text-[#2b7178] gap-6 flex flex-col justify-between">
                 <div>
-                    <label className="text-sm">Full name</label>
+                    <label className="text-lg">Full name</label>
                     <input name='name' required id="name" type="text" placeholder="Your Full Name" className="border border-[#59C6D2] rounded-lg focus:outline-0 w-full p-3 bg-[#328eff0c] focus:bg-[#328EFF26] transition duration-500" />
                 </div>
                 <div>
-                    <label className="text-sm">Email</label>
+                    <label className="text-lg">Email</label>
                     <input name='email' required id="email" type="email" placeholder="Your Email" className="border border-[#59C6D2] rounded-lg focus:outline-0 w-full p-3 bg-[#328eff0c] focus:bg-[#328EFF26] transition duration-500" />
                 </div>
                 <div>
-                    <label className="text-sm">Message</label>
+                    <label className="text-lg">Message</label>
                     <textarea name='message' required id="message" rows="3" placeholder="Write Your Message to us" className="border border-[#59C6D2] rounded-lg focus:outline-0 w-full p-3 bg-[#328eff0c] focus:bg-[#328EFF26] transition duration-500"></textarea>
                 </div>
                 <button type="submit" className="w-full flex items-center justify-center tracking-wide uppercase p-3 font-bold rounded-lg bg-teal-600 text-white border border-teal-600 hover:text-teal-600 hover:bg-transparent transition duration-500">Send Message</button>
