@@ -17,15 +17,15 @@ const About = () => {
                 </p>
             </div>
 
-            <fieldset className="md:w-2/3 mt-8 text-[#415860] border border-solid border-[#415860] rounded-lg py-3 px-6 bg-[#e3f4f8]">
-                <legend className="text-lg border border-[#415860] px-4 py-2 rounded-lg font-semibold bg-[#415860] text-white hover:text-[#415860] hover:bg-transparent cursor-pointer transition duration-500">Our Mission</legend>
+            <fieldset id="about-1" className="md:w-2/3 mt-8 text-[#415860] border border-solid border-[#415860] rounded-lg py-3 px-6 bg-[#e3f4f8]">
+                <legend className="text-lg border border-[#415860] px-4 py-2 rounded-lg font-semibold bg-[#415860] text-white hover:text-[#415860] hover:bg-transparent cursor-pointer transition duration-500"><a href="#about-2">Our Mission</a></legend>
                 <p className="text-xl">
                     At <span className="text-teal-800 font-semibold italic">Verse Voyage</span>, our mission is simple: to celebrate the power of storytelling and foster a love for reading. We believe that books have the remarkable ability to inspire, educate, and entertain, and we&rsquo;re dedicated to helping readers find the perfect book for every occasion.
                 </p>
             </fieldset>
 
-            <fieldset className="md:w-2/3 mt-8 text-[#415860] border border-solid border-[#415860] rounded-lg py-3 px-6 bg-[#e3f4f8]">
-                <legend className="text-lg border border-[#415860] px-4 py-2 rounded-lg font-semibold bg-[#415860] text-white hover:text-[#415860] hover:bg-transparent cursor-pointer transition duration-500">What We Offer</legend>
+            <fieldset id="about-2" className="md:w-2/3 mt-8 text-[#415860] border border-solid border-[#415860] rounded-lg py-3 px-6 bg-[#e3f4f8]">
+                <legend className="text-lg border border-[#415860] px-4 py-2 rounded-lg font-semibold bg-[#415860] text-white hover:text-[#415860] hover:bg-transparent cursor-pointer transition duration-500"><a href="#about-3">What We Offer</a></legend>
                 <p className="text-xl space-y-3">
                     <li className="list-disc"><span className="text-teal-800 font-semibold">Expert Reviews: </span>Our team of experienced reviewers provides honest, insightful critiques of a wide range of books, from bestsellers to hidden gems.</li>
                     <li className="list-disc"><span className="text-teal-800 font-semibold">Author Interviews: </span>Get to know the faces behind the words with exclusive interviews and behind-the-scenes peeks into the lives of your favorite authors.</li>
@@ -34,13 +34,13 @@ const About = () => {
                 </p>
             </fieldset>
 
-            <fieldset className="md:w-2/3 mt-8 text-[#415860] border border-solid border-[#415860] rounded-lg py-3 px-6 bg-[#e3f4f8]">
-                <legend className="text-lg border border-[#415860] px-4 py-2 rounded-lg font-semibold bg-[#415860] text-white hover:text-[#415860] hover:bg-transparent cursor-pointer transition duration-500">Our Commitment</legend>
+            <fieldset id="about-3" className="md:w-2/3 mt-8 text-[#415860] border border-solid border-[#415860] rounded-lg py-3 px-6 bg-[#e3f4f8]">
+                <legend className="text-lg border border-[#415860] px-4 py-2 rounded-lg font-semibold bg-[#415860] text-white hover:text-[#415860] hover:bg-transparent cursor-pointer transition duration-500"><a href="#about-4">Our Commitment</a></legend>
                 <p className="text-xl">At <span className="text-teal-800 font-semibold italic">Verse Voyage</span>, we&rsquo;re committed to promoting diversity and representation in literature. We strive to highlight books from diverse authors and perspectives, ensuring that everyone can find stories that resonate with them.</p>
             </fieldset>
 
-            <fieldset className="md:w-2/3 mt-8 text-[#415860] border border-solid border-[#415860] rounded-lg py-3 px-6 bg-[#e3f4f8]">
-                <legend className="text-lg border border-[#415860] px-4 py-2 rounded-lg font-semibold bg-[#415860] text-white hover:text-[#415860] hover:bg-transparent cursor-pointer transition duration-500">Get Involved</legend>
+            <fieldset id="about-4" className="md:w-2/3 mt-8 text-[#415860] border border-solid border-[#415860] rounded-lg py-3 px-6 bg-[#e3f4f8]">
+                <legend className="text-lg border border-[#415860] px-4 py-2 rounded-lg font-semibold bg-[#415860] text-white hover:text-[#415860] hover:bg-transparent cursor-pointer transition duration-500"><a href="#about-1">Get Involved</a></legend>
                 <p className="text-xl">
                     Are you passionate about books and storytelling? Join our community! Whether you&rsquo;re a reader, author, or industry professional, there are plenty of ways to get involved. Follow us on social media, subscribe to our newsletter, or reach out to learn more about opportunities for collaboration.
                 </p>

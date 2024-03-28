@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import "./Navbar.css";
+import { PiBookOpenTextDuotone } from "react-icons/pi";
 
 const Navbar = () => {
 
@@ -23,7 +24,7 @@ const Navbar = () => {
                             {navRoutes}
                         </ul>
                     </div>
-                    <Link to={'/'} className="bg-transparent hover:text-[#59C6D2] hover:scale-110 transition duration-500 text-[#131313] !text-lg xl:!text-3xl font-bold p-0 md:px-4">Verse Voyage</Link>
+                    <Link to={'/'} className="bg-transparent text-teal-700 hover:text-[#59C6D2] hover:scale-105 transition duration-500 md:!text-lg xl:!text-3xl font-bold p-0 xl:!px-4 flex items-center gap-1"><PiBookOpenTextDuotone /> Verse Voyage</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex text-[#150B2BB3] lg:mr-6">
                     <ul className="text-[#131313CC] xl:!text-lg font-semibold menu menu-horizontal gap-1 lg:gap-4 px-1">

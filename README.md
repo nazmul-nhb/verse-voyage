@@ -15,6 +15,7 @@
 - You may observe a loading bar on **Home** and **Book Details** page for a brief moment of time. This will be shown until the data are loaded.
 - You can go to **Contact** page to see contact information.
 - **About** page will show you about the website.
+- In **About** page you can move to sections by clicking on the legends.
 - In the **Footer** section you will see social links for the website.
 
 
