@@ -13,7 +13,7 @@ const Navbar = () => {
     </>
 
     return (
-        <header className="work-sans mt-3 md:mt-10 mx-4 xl:mx-28">
+        <header className="work-sans mt-3 md:mt-10 mx-4 xl:mx-16 2xl:mx-28">
             <div className="max-w-7xl items-center navbar mx-auto">
                 <div className="navbar-start">
                     <div className="dropdown">
@@ -24,7 +24,7 @@ const Navbar = () => {
                             {navRoutes}
                         </ul>
                     </div>
-                    <Link to={'/'} className="bg-transparent text-teal-700 hover:text-[#59C6D2] hover:scale-105 transition duration-500 md:!text-lg xl:!text-3xl font-bold p-0 xl:!px-4 flex items-center gap-1"><PiBookOpenTextDuotone /> Verse Voyage</Link>
+                    <Link to={'/'} className="bg-transparent text-teal-700 hover:text-[#59C6D2] hover:scale-105 transition duration-500 md:!text-lg xl:!text-2xl font-bold p-0 xl:!px-4 flex items-center gap-1"><PiBookOpenTextDuotone /> Verse Voyage</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex text-[#150B2BB3] lg:mr-6">
                     <ul className="text-[#131313CC] xl:!text-lg font-semibold menu menu-horizontal gap-1 lg:gap-4 px-1">
